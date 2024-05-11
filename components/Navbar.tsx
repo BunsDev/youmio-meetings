@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full">
           <IconMicrophone height={20} width={20} />
         </div>
-        <div className="px-4 py-0.5 text-md font-semibold ring-2 flex cursor-pointer items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full">
+        <div className="px-4 py-0.5 text-md font-medium ring-2 flex cursor-pointer items-center justify-center bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-full">
           88.99 YMI
         </div>
         <input type="submit" hidden value="" />
