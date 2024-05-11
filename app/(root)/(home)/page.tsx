@@ -80,7 +80,8 @@ const Home = () => {
             </button>
           </div>
         </WobbleCard>
-        <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <p>A tab to add list of vidoes etc </p>
+        {/* <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
           <div className="max-w-sm">
             <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
               Signup for blazing-fast cutting-edge state of the art Gippity AI
@@ -98,7 +99,7 @@ const Home = () => {
             alt="linear demo image"
             className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
           />
-        </WobbleCard>
+        </WobbleCard> */}
       </div>
       <CategoryTypeList />
     </section>

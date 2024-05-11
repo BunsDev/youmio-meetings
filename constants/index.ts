@@ -17,8 +17,8 @@ export const sidebarLinks = [
   // },
   {
     imgURL: '/icons/Video.svg',
-    route: '/recordings',
-    label: 'Youmio MeetR',
+    route: '/youmio-meet',
+    label: 'Youmio Meet',
   },
   {
     imgURL: '/icons/microphone.svg',
