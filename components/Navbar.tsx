@@ -39,7 +39,7 @@ const Navbar = () => {
         method="POST"
         className="flex items-center space-x-2 text-slate-200"
       >
-        <div className="bg-[#0f0f0f] w-full ring-1 ring-opacity-10 ring-white shadow-xl text-white flex items-center space-x-1 py-2 px-4 rounded-full h-full">
+        <div className="bg-[#0f0f0f] w-96 ring-1 ring-opacity-10 ring-white shadow-xl text-white flex items-center space-x-1 py-2 px-4 rounded-full h-full">
           {renderMagnifyingGlassIcon()}
           <input
             type="search"
@@ -48,7 +48,10 @@ const Navbar = () => {
           />
         </div>
         <div className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full">
-          <IconMicrophone />
+          <IconMicrophone height={20} width={20} />
+        </div>
+        <div className="px-4 py-0.5 text-md font-semibold ring-2 flex cursor-pointer items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full">
+          88.99 YMI
         </div>
         <input type="submit" hidden value="" />
       </form>
