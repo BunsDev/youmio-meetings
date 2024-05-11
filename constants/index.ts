@@ -18,7 +18,7 @@ export const sidebarLinks = [
   {
     imgURL: '/icons/Video.svg',
     route: '/recordings',
-    label: 'Youmio Meet (RDs)',
+    label: 'Youmio MeetR',
   },
   {
     imgURL: '/icons/microphone.svg',
@@ -39,6 +39,11 @@ export const sidebarLinks = [
     imgURL: '/icons/music.svg',
     route: '/recordings',
     label: 'Podcast & Music',
+  },
+  {
+    imgURL: '/icons/users-group.svg',
+    route: '/recordings',
+    label: 'Community',
   },
   {
     imgURL: '/icons/plus.svg',
