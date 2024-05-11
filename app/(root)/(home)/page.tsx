@@ -5,6 +5,7 @@ import React from 'react';
 import { WobbleCard } from '@/components/ui/wobble-card';
 import { Vortex } from '@/components/ui/vortex';
 import { IconBroadcast } from '@tabler/icons-react';
+import CategoryTypeList from '@/components/CategoryTypeList';
 const Home = () => {
   const now = new Date();
 
@@ -18,7 +19,6 @@ const Home = () => {
 
   return (
     <section className="flex size-full flex-col gap-4 text-white">
-      {/* <Vortex backgroundColor="transparent" className="py-4 w-full h-full"> */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
         <WobbleCard
           containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 max-h-[400px] lg:max-h-[390px]"
@@ -100,21 +100,7 @@ const Home = () => {
           />
         </WobbleCard>
       </div>
-      {/* </Vortex> */}
-
-      <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover">
-        <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
-          <h2 className="glassmorphism max-w-[273px] rounded-xl py-2 text-center text-base font-normal">
-            Upcoming Meeting at: 12:30 PM
-          </h2>
-          <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-extrabold lg:text-7xl">{time}</h1>
-            <p className="text-lg font-medium text-sky-1 lg:text-2xl">{date}</p>
-          </div>
-        </div>
-      </div>
-
-      <MeetingTypeList />
+      <CategoryTypeList />
     </section>
   );
 };
