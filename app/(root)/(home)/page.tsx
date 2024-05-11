@@ -19,12 +19,12 @@ const Home = () => {
     <section className="flex size-full flex-col gap-4 text-white">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
         <WobbleCard
-          containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+          containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 max-h-[400px] lg:max-h-[390px]"
           className=""
         >
           <div className="max-w-xs">
             <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-              Watch Livestreams from your Friends
+              Watch Livestreams and Listen to podcasts from your Friends
               <IconBroadcast className="h-20 w-20" />
             </h2>
             <p className="mt-4 text-left  text-base/6 text-neutral-200">
@@ -34,19 +34,49 @@ const Home = () => {
           </div>
           <Image
             src="/images/music-lady.png"
-            width={600}
-            height={600}
+            width={300}
+            height={300}
             alt="linear demo image"
             className="absolute -right-4 lg:-right-[5%] grayscale filter -bottom-10 object-contain rounded-2xl"
           />
         </WobbleCard>
-        <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+        <WobbleCard containerClassName="col-span-1 max-h-[390px]">
           <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            No shirt, no shoes, no weapons.
+            Top Creators
           </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            If someone yells “stop!”, goes limp, or taps out, the fight is over.
-          </p>
+          <div className="py-2">
+            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
+              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+              <div>
+                <p className="text-sm">Mends Albert</p>
+                <p className="text-xs">323 Followers</p>
+              </div>
+            </div>
+            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
+              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+              <div>
+                <p className="text-sm">Mends Albert</p>
+                <p className="text-xs">323 Followers</p>
+              </div>
+            </div>
+            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
+              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+              <div>
+                <p className="text-sm">Mends Albert</p>
+                <p className="text-xs">323 Followers</p>
+              </div>
+            </div>
+            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
+              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+              <div>
+                <p className="text-sm">Mends Albert</p>
+                <p className="text-xs">323 Followers</p>
+              </div>
+            </div>
+            <button className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+              View All
+            </button>
+          </div>
         </WobbleCard>
         <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
           <div className="max-w-sm">
