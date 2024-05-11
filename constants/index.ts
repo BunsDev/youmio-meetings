@@ -27,7 +27,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: '/icons/broadcast.svg',
-    route: '/recordings',
+    route: '/stream',
     label: 'Live Streams',
   },
   {
