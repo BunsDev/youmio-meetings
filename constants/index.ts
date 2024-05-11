@@ -5,20 +5,20 @@ export const sidebarLinks = [
     label: 'Home',
   },
 
-  {
-    imgURL: '/icons/upcoming.svg',
-    route: '/upcoming',
-    label: 'Upcoming',
-  },
-  {
-    imgURL: '/icons/previous.svg',
-    route: '/previous',
-    label: 'Previous',
-  },
+  // {
+  //   imgURL: '/icons/upcoming.svg',
+  //   route: '/upcoming',
+  //   label: 'Upcoming',
+  // },
+  // {
+  //   imgURL: '/icons/previous.svg',
+  //   route: '/previous',
+  //   label: 'Previous',
+  // },
   {
     imgURL: '/icons/Video.svg',
     route: '/recordings',
-    label: 'Recordings',
+    label: 'Youmio Meet (RDs)',
   },
   {
     imgURL: '/icons/microphone.svg',
@@ -28,10 +28,20 @@ export const sidebarLinks = [
   {
     imgURL: '/icons/broadcast.svg',
     route: '/recordings',
-    label: 'Live Stream',
+    label: 'Live Streams',
   },
   {
-    imgURL: '/icons/add-personal.svg',
+    imgURL: '/icons/player-play.svg',
+    route: '/recordings',
+    label: 'Videos',
+  },
+  {
+    imgURL: '/icons/music.svg',
+    route: '/recordings',
+    label: 'Podcast & Music',
+  },
+  {
+    imgURL: '/icons/plus.svg',
     route: '/personal-room',
     label: 'Personal Room',
   },
