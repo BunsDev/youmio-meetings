@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { SignedIn, UserButton } from '@clerk/nextjs';
-import { IconBell } from '@tabler/icons-react';
+import { IconBell, IconMicrophone } from '@tabler/icons-react';
 import MobileNav from './MobileNav';
 import { BellIcon } from 'lucide-react';
 
@@ -34,14 +34,21 @@ const Navbar = () => {
   };
   const renderSearchForm = () => {
     return (
-      <form action="" method="POST" className="flex-1text-slate-200">
+      <form
+        action=""
+        method="POST"
+        className="flex items-center space-x-2 text-slate-200"
+      >
         <div className="bg-[#0f0f0f] w-full ring-1 ring-opacity-10 ring-white shadow-xl text-white flex items-center space-x-1 py-2 px-4 rounded-full h-full">
           {renderMagnifyingGlassIcon()}
           <input
             type="search"
-            placeholder="Type and press enter"
+            placeholder="Type and press enter."
             className="border-none bg-transparent focus:outline-none focus:ring-0 w-full text-sm "
           />
+        </div>
+        <div className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full">
+          <IconMicrophone />
         </div>
         <input type="submit" hidden value="" />
       </form>
