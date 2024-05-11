@@ -18,24 +18,7 @@ const Home = () => {
 
   return (
     <section className="flex size-full flex-col gap-4 text-white">
-      <Vortex
-        backgroundColor="black"
-        className=" px-2 md:px-10 py-4 w-full h-full"
-      >
-        <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-          The hell is this?
-        </h2>
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-          This is chemical burn. It&apos;ll hurt more than you&apos;ve ever been
-          burned and you&apos;ll have a scar.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-          <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
-            Order now
-          </button>
-          <button className="px-4 py-2  text-white ">Watch trailer</button>
-        </div>
-      </Vortex>
+      {/* <Vortex backgroundColor="transparent" className="py-4 w-full h-full"> */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
         <WobbleCard
           containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 max-h-[400px] lg:max-h-[390px]"
@@ -53,8 +36,8 @@ const Home = () => {
           </div>
           <Image
             src="/images/music-lady.png"
-            width={300}
-            height={300}
+            width={350}
+            height={350}
             alt="linear demo image"
             className="absolute -right-4 lg:-right-[5%] grayscale filter -bottom-10 object-contain rounded-2xl"
           />
@@ -117,6 +100,8 @@ const Home = () => {
           />
         </WobbleCard>
       </div>
+      {/* </Vortex> */}
+
       <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover">
         <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
           <h2 className="glassmorphism max-w-[273px] rounded-xl py-2 text-center text-base font-normal">
