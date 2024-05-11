@@ -22,7 +22,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: '/icons/microphone.svg',
-    route: '/recordings',
+    route: '/audio-room',
     label: 'Audio Room',
   },
   {

@@ -1,4 +1,5 @@
 'use client';
+import AudioRoomTypeList from '@/components/AudioRoomTypeList';
 import MeetingTypeList from '@/components/MeetingTypeList';
 import React from 'react';
 
@@ -27,7 +28,7 @@ const AudioRoom = () => {
         </div>
       </div>
 
-      <MeetingTypeList />
+      <AudioRoomTypeList />
     </section>
   );
 };
