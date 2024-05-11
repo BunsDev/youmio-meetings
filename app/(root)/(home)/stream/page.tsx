@@ -1,5 +1,6 @@
 'use client';
 import CategoryCard from '@/components/CategoryCard';
+import StreamCard from '@/components/StreamCard';
 import { Livepeer } from 'livepeer';
 
 const livepeer = new Livepeer({
@@ -24,27 +25,27 @@ const PreviousPage = () => {
     <section className="flex size-full flex-col gap-10 text-white">
       <h1 className="text-3xl font-bold">Stream Information</h1>
       <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
-        <CategoryCard
+        <StreamCard
           img="/icons/schedule.svg"
-          title="Videos"
+          title="Stream ID: 34f..43f"
           description="Plan your meeting"
           className="bg-gray-900  bg-cover   border-b-4"
         />
-        <CategoryCard
+        <StreamCard
           img="/icons/schedule.svg"
-          title="Videos"
+          title="Stream ID: 34f..43f"
           description="Plan your meeting"
           className="bg-gray-900  bg-cover   border-b-4"
         />
-        <CategoryCard
+        <StreamCard
           img="/icons/schedule.svg"
-          title="Videos"
+          title="Stream ID: 34f..43f"
           description="Plan your meeting"
           className="bg-gray-900  bg-cover   border-b-4"
         />
-        <CategoryCard
+        <StreamCard
           img="/icons/schedule.svg"
-          title="Videos"
+          title="Stream ID: 34f..43f"
           description="Plan your meeting"
           className="bg-gray-900  bg-cover   border-b-4"
         />

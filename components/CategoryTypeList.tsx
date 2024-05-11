@@ -11,6 +11,7 @@ import { useUser } from '@clerk/nextjs';
 
 import { useToast } from './ui/use-toast';
 import CategoryCard from './CategoryCard';
+import StreamCard from './StreamCard';
 const initialValues = {
   dateTime: new Date(),
   description: '',
@@ -35,20 +36,20 @@ const CategoryTypeList = () => {
         title="Music & Podcast"
         description="Start an instant meeting"
         handleClick={() => setMeetingState('isInstantMeeting')}
-        className=" bg-[url('/images/mic.png')] bg-cover  border-b-4"
+        className=" bg-[url('/images/mic.png')] bg-cover bg-center border-b-4"
       />
       <CategoryCard
         img="/images/music-lady.png"
         title="Audio Rooms"
         description="via invitation link"
-        className="bg-blue-1 bg-[url('/images/radio.webp')] bg-cover   border-b-4"
+        className="bg-blue-1 bg-[url('/images/radio.webp')] bg-cover bg-center  border-b-4"
         handleClick={() => setMeetingState('isJoiningMeeting')}
       />
       <CategoryCard
         img="/icons/schedule.svg"
         title="Videos"
         description="Plan your meeting"
-        className="bg-red-500 bg-[url('/images/messi.avif')] bg-cover   border-b-4"
+        className="bg-red-500 bg-[url('/images/messi.avif')] bg-cover bg-center  border-b-4"
         handleClick={() => setMeetingState('isScheduleMeeting')}
       />
       <CategoryCard
