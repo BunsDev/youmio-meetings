@@ -23,7 +23,12 @@ export const sidebarLinks = [
   {
     imgURL: '/icons/microphone.svg',
     route: '/recordings',
-    label: 'Recordings',
+    label: 'Audio Room',
+  },
+  {
+    imgURL: '/icons/broadcast.svg',
+    route: '/recordings',
+    label: 'Live Stream',
   },
   {
     imgURL: '/icons/add-personal.svg',
