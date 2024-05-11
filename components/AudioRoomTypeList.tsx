@@ -97,7 +97,7 @@ const AudioRoomTypeList = () => {
       />
       <HomeCard
         img="/icons/schedule.svg"
-        title="Schedule Audio Room"
+        title="Schedule Room"
         description="Plan your space"
         className="bg-purple-1"
         handleClick={() => setMeetingState('isScheduleMeeting')}
