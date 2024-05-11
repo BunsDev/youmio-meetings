@@ -24,6 +24,7 @@ export default function RootLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
       <ClerkProvider
         appearance={{
           layout: {

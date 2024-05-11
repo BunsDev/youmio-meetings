@@ -10,7 +10,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <section className="sticky overflow-scroll left-0 top-0 flex h-screen w-fit flex-col  justify-between  bg-[#0f0f0f] p-4 pt-28 text-white max-sm:hidden lg:w-[220px]">
+    <section className="sticky shadow-2xl overflow-scroll left-0 top-0 flex h-screen w-fit flex-col  justify-between  bg-[#0f0f0f] p-4 pt-28 text-white max-sm:hidden lg:w-[220px]">
       <div className="flex flex-1 flex-col gap-2">
         {sidebarLinks.map((item) => {
           const isActive =
