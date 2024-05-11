@@ -23,7 +23,15 @@ const createStream = async () => {
 const PreviousPage = () => {
   return (
     <section className="flex size-full flex-col gap-10 text-white">
-      <h1 className="text-3xl font-bold">Stream Information</h1>
+      <div className="flex flex-row space-x-2">
+        <h1 className="text-3xl font-bold">Stream Information</h1>
+        <button
+          onClick={createStream}
+          className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200"
+        >
+          Create Stream
+        </button>
+      </div>
       <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
         <StreamCard
           img="/icons/schedule.svg"
@@ -50,13 +58,6 @@ const PreviousPage = () => {
           className="bg-gray-900  bg-cover   border-b-4"
         />
       </section>
-      <button
-        onClick={createStream}
-        className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200"
-      >
-        Create Stream
-      </button>
-      {/* <CallList type="ended" /> */}
     </section>
   );
 };
