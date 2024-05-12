@@ -35,7 +35,7 @@ createWeb3Modal({
   projectId,
   defaultChain: BitTorrent,
   enableAnalytics: true, // Optional
-  themeMode: 'light',
+  //   themeMode: 'light',
 });
 
 export const WagmiProviderComp = ({
