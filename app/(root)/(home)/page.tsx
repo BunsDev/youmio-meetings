@@ -26,12 +26,12 @@ const Home = () => {
         >
           <div className="max-w-xs">
             <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-              Watch Livestreams and Listen to podcasts from your Friends
+              Watch Livestreams everywhere
               <IconBroadcast className="h-20 w-20" />
             </h2>
             <p className="mt-4 text-left  text-base/6 text-neutral-200">
-              With over 1,000 mothly active bot users, Youmio is the most
-              popular streaming and meeting platform for streamers.
+              With over 1,000 mothly active users , Youmio is the most popular
+              web3 streaming and meeting platform.
             </p>
           </div>
           <Image
