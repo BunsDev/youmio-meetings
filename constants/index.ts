@@ -32,7 +32,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: '/icons/player-play.svg',
-    route: '/recordings',
+    route: '/video',
     label: 'Videos',
   },
   {
