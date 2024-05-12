@@ -42,7 +42,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: '/icons/users-group.svg',
-    route: '/recordings',
+    route: '/community',
     label: 'Community',
   },
   {
