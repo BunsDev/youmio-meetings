@@ -32,31 +32,31 @@ const CategoryTypeList = () => {
   return (
     <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
       <CategoryCard
-        img="/icons/add-meeting.svg"
+        img="/icons/music.svg"
         title="Music & Podcast"
-        description="Start an instant meeting"
+        description="Enjoy music everywhere"
         handleClick={() => setMeetingState('isInstantMeeting')}
-        className=" bg-[url('/images/mic.png')] bg-cover bg-center border-b-4"
+        className="  bg-cover bg-center border-b-4"
       />
       <CategoryCard
-        img="/images/music-lady.png"
-        title="Audio Rooms"
+        img="/icons/microphone.svg"
+        title="Join Audio Rooms"
         description="via invitation link"
-        className="bg-blue-1 bg-[url('/images/radio.webp')] bg-cover bg-center  border-b-4"
+        className="bg-blue-1  bg-cover bg-center  border-b-4"
         handleClick={() => setMeetingState('isJoiningMeeting')}
       />
       <CategoryCard
-        img="/icons/schedule.svg"
-        title="Videos"
-        description="Plan your meeting"
-        className="bg-red-500 bg-[url('/images/messi.avif')] bg-cover bg-center  border-b-4"
+        img="/icons/broadcast.svg"
+        title="Streams"
+        description="Watch Live streams"
+        className="bg-red-500  bg-cover bg-center  border-b-4"
         handleClick={() => setMeetingState('isScheduleMeeting')}
       />
       <CategoryCard
-        img="/icons/recordings.svg"
+        img="/icons/video.svg"
         title="Online Meeet"
-        description="Meeting Recordings"
-        className="bg-yellow-1  border-b-4 bg-[url('/images/meet.jpeg')] bg-cover  "
+        description="Start an instant meeting"
+        className="bg-yellow-1  border-b-4 bg-cover  "
         handleClick={() => router.push('/recordings')}
       />
     </section>

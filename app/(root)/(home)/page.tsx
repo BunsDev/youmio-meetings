@@ -21,7 +21,7 @@ const Home = () => {
     <section className="flex size-full flex-col gap-4 text-white">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
         <WobbleCard
-          containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 max-h-[400px] lg:max-h-[390px]"
+          containerClassName="col-span-1 lg:col-span-3 h-full bg-pink-800 max-h-[400px] lg:max-h-[390px]"
           className=""
         >
           <div className="max-w-xs">
@@ -42,7 +42,7 @@ const Home = () => {
             className="absolute -right-4 lg:-right-[5%] grayscale filter -bottom-10 object-contain rounded-2xl"
           />
         </WobbleCard>
-        <WobbleCard containerClassName="col-span-1 max-h-[390px] bg-purple-900">
+        {/* <WobbleCard containerClassName="col-span-1 max-h-[390px] bg-purple-900">
           <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Top Creators
           </h2>
@@ -79,8 +79,8 @@ const Home = () => {
               View All
             </button>
           </div>
-        </WobbleCard>
-        <p>A tab to add list of vidoes etc </p>
+        </WobbleCard> */}
+        {/* <p>A tab to add list of vidoes etc </p> */}
         {/* <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
           <div className="max-w-sm">
             <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">

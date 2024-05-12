@@ -27,8 +27,8 @@ const CategoryCard = ({
       )}
       onClick={handleClick}
     >
-      <div className="flex-center  size-16 hidden  rounded-[10px]">
-        {/* <Image src={img} alt="meeting" width={30} height={30} /> */}
+      <div className="flex-center glassmorphism  size-12 hidden  rounded-[10px]">
+        <Image src={img} alt="meeting" width={30} height={30} />
       </div>
 
       <div className="flex flex-col gap-2">
