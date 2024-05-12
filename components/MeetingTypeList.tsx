@@ -13,7 +13,8 @@ import { Textarea } from './ui/textarea';
 import ReactDatePicker from 'react-datepicker';
 import { useToast } from './ui/use-toast';
 import { Input } from './ui/input';
-
+import { contract } from '@/utils';
+import { signUp, createMeetingS } from '../utils/queries';
 const initialValues = {
   dateTime: new Date(),
   description: '',
@@ -32,37 +33,41 @@ const MeetingTypeList = () => {
   const { toast } = useToast();
 
   const createMeeting = async () => {
-    if (!client || !user) return;
-    try {
-      if (!values.dateTime) {
-        toast({ title: 'Please select a date and time' });
-        return;
-      }
-      const id = crypto.randomUUID();
-      const call = client.call('default', id);
-      if (!call) throw new Error('Failed to create meeting');
-      const startsAt =
-        values.dateTime.toISOString() || new Date(Date.now()).toISOString();
-      const description = values.description || 'Instant Meeting';
-      await call.getOrCreate({
-        data: {
-          starts_at: startsAt,
-          custom: {
-            description,
-          },
-        },
-      });
-      setCallDetail(call);
-      if (!values.description) {
-        router.push(`/meeting/${call.id}`);
-      }
-      toast({
-        title: 'Meeting Created',
-      });
-    } catch (error) {
-      console.error(error);
-      toast({ title: 'Failed to create Meeting' });
-    }
+    alert('fsdf');
+    let ss = await createMeetingS('fsadf');
+    console.log(ss);
+
+    // if (!client || !user) return;
+    // try {
+    //   if (!values.dateTime) {
+    //     toast({ title: 'Please select a date and time' });
+    //     return;
+    //   }
+    //   const id = crypto.randomUUID();
+    //   const call = client.call('default', id);
+    //   if (!call) throw new Error('Failed to create meeting');
+    //   const startsAt =
+    //     values.dateTime.toISOString() || new Date(Date.now()).toISOString();
+    //   const description = values.description || 'Instant Meeting';
+    //   await call.getOrCreate({
+    //     data: {
+    //       starts_at: startsAt,
+    //       custom: {
+    //         description,
+    //       },
+    //     },
+    //   });
+    //   setCallDetail(call);
+    //   if (!values.description) {
+    //     router.push(`/meeting/${call.id}`);
+    //   }
+    //   toast({
+    //     title: 'Meeting Created',
+    //   });
+    // } catch (error) {
+    //   console.error(error);
+    //   toast({ title: 'Failed to create Meeting' });
+    // }
   };
 
   if (!client || !user) return <Loader />;

@@ -11,6 +11,10 @@ import '@stream-io/video-react-sdk/dist/css/styles.css';
 import 'react-datepicker/dist/react-datepicker.css';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import WagmiProviderComp from '../lib/wagmi-provider';
+import { config } from '../lib/config';
+import { cookieToInitialState } from 'wagmi';
+// import { headers } from 'next/headers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,32 +29,36 @@ const inter = Inter({ subsets: ['latin'] });
 export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
+  const initialState = cookieToInitialState(config);
+
   return (
     <html lang="en">
-      <LivepeerConfig client={LivepeerClient}>
-        <ClerkProvider
-          appearance={{
-            layout: {
-              socialButtonsVariant: 'iconButton',
-              logoImageUrl: '/icons/yoom-logo.svg',
-            },
-            // baseTheme: dark,
+      <WagmiProviderComp initialState={initialState}>
+        <LivepeerConfig client={LivepeerClient}>
+          <ClerkProvider
+            appearance={{
+              layout: {
+                socialButtonsVariant: 'iconButton',
+                logoImageUrl: '/icons/yoom-logo.svg',
+              },
+              // baseTheme: dark,
 
-            variables: {
-              colorText: '#fff',
-              colorPrimary: '#0E78F9',
-              colorBackground: '#0f0f0f',
-              colorInputBackground: '#252A41',
-              colorInputText: '#fff',
-            },
-          }}
-        >
-          <body className={`${inter.className} bg-dark-2`}>
-            <Toaster />
-            {children}
-          </body>
-        </ClerkProvider>
-      </LivepeerConfig>
+              variables: {
+                colorText: '#fff',
+                colorPrimary: '#0E78F9',
+                colorBackground: '#0f0f0f',
+                colorInputBackground: '#252A41',
+                colorInputText: '#fff',
+              },
+            }}
+          >
+            <body className={`${inter.className} bg-dark-2`}>
+              <Toaster />
+              {children}
+            </body>
+          </ClerkProvider>
+        </LivepeerConfig>
+      </WagmiProviderComp>
     </html>
   );
 }
