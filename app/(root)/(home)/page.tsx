@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import { WobbleCard } from '@/components/ui/wobble-card';
 import { Vortex } from '@/components/ui/vortex';
-import { IconBroadcast } from '@tabler/icons-react';
+import { IconBroadcast, IconEye, IconThumbUp } from '@tabler/icons-react';
 import CategoryTypeList from '@/components/CategoryTypeList';
 const Home = () => {
   const now = new Date();
@@ -21,7 +21,7 @@ const Home = () => {
     <section className="flex size-full flex-col gap-4 text-white">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
         <WobbleCard
-          containerClassName="col-span-1 lg:col-span-3 h-full bg-pink-800 max-h-[400px] lg:max-h-[390px]"
+          containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 max-h-[400px] lg:max-h-[390px]"
           className=""
         >
           <div className="max-w-xs">
@@ -42,7 +42,7 @@ const Home = () => {
             className="absolute -right-4 lg:-right-[5%] grayscale filter -bottom-10 object-contain rounded-2xl"
           />
         </WobbleCard>
-        {/* <WobbleCard containerClassName="col-span-1 max-h-[390px] bg-purple-900">
+        <WobbleCard containerClassName="col-span-1 max-h-[390px] bg-purple-900">
           <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Top Creators
           </h2>
@@ -79,8 +79,8 @@ const Home = () => {
               View All
             </button>
           </div>
-        </WobbleCard> */}
-        {/* <p>A tab to add list of vidoes etc </p> */}
+        </WobbleCard>
+
         {/* <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
           <div className="max-w-sm">
             <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
@@ -101,6 +101,43 @@ const Home = () => {
           />
         </WobbleCard> */}
       </div>
+      <section className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 max-w-7xl mx-auto w-full">
+        <div className="bg-[#000000] p-2 rounded-xl ">
+          <iframe
+            src="https://lvpr.tv?v=506417joszjctksv"
+            className="rounded-xl"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            sandbox="allow-same-origin allow-scripts"
+          ></iframe>
+          <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row items-center  space-x-3 py-2">
+              <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m1.webp')] bg-cover bg-center"></span>
+              <div>
+                <p className="text-sm">A cartoons</p>
+                <p className="text-xs">Mends Albert</p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center space-x-1">
+              <IconThumbUp height={16} width={16} />
+              <span className="text-sm">3</span>
+            </div>
+            <div className="flex flex-row items-center space-x-1">
+              <IconEye height={16} width={16} />
+              <span className="text-sm">3.2k</span>
+            </div>
+          </div>
+        </div>
+        <iframe
+          src="https://lvpr.tv?v=506417joszjctksv"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          sandbox="allow-same-origin allow-scripts"
+        ></iframe>
+        <iframe
+          src="https://lvpr.tv?v=506417joszjctksv"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          sandbox="allow-same-origin allow-scripts"
+        ></iframe>
+      </section>
       <CategoryTypeList />
     </section>
   );
