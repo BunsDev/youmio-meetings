@@ -1,11 +1,58 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useCreateAsset } from '@livepeer/react';
 import { SignedIn, UserButton } from '@clerk/nextjs';
-import { IconBell, IconMicrophone } from '@tabler/icons-react';
+import {
+  IconBell,
+  IconBroadcast,
+  IconFileUpload,
+  IconMicrophone,
+  IconUpload,
+} from '@tabler/icons-react';
 import MobileNav from './MobileNav';
 import { BellIcon } from 'lucide-react';
+import MeetingModal from './MeetingModal';
+import { useState } from 'react';
+import { Input } from './ui/input';
+import { Textarea } from './ui/textarea';
+import Loader2 from './Loader';
 
 const Navbar = () => {
+  const [isUpload, setIsUpload] = useState(false);
+  const [video, setVideo] = useState<File | undefined>(undefined);
+
+  // Ref for the file input
+  const {
+    mutate: createAsset,
+    data: assets,
+    status,
+    progress,
+    error,
+  } = useCreateAsset(
+    // we use a `const` assertion here to provide better Typescript types
+    // for the returned data
+    video
+      ? {
+          sources: [
+            {
+              name: video.name,
+              file: video,
+              storage: {
+                ipfs: true,
+                metadata: {
+                  name: 'interesting video',
+                  description: 'a great description of the video',
+                },
+              },
+            },
+          ] as const,
+        }
+      : null,
+  );
+  const createVideo = async () => {
+    createAsset?.();
+  };
   const renderMagnifyingGlassIcon = () => {
     return (
       <svg
@@ -50,6 +97,21 @@ const Navbar = () => {
         <div className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full">
           <IconMicrophone height={20} width={20} />
         </div>
+        <div className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full">
+          <Link href={'/stream'}>
+            <IconBroadcast height={20} width={20} />
+          </Link>
+        </div>
+        <div
+          onClick={() => {
+            setIsUpload(true);
+          }}
+          className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full"
+        >
+          {/* <Link href={'/video'}> */}
+          <IconUpload height={20} width={20} />
+          {/* </Link> */}
+        </div>
         <div className="px-4 py-0.5 text-white text-md font-medium border flex cursor-pointer items-center justify-center  rounded-lg">
           88.99 YMI
         </div>
@@ -75,8 +137,47 @@ const Navbar = () => {
       <div>
         <div className=" ">{renderSearchForm()}</div>
       </div>
+      <MeetingModal
+        isOpen={isUpload}
+        onClose={() => setIsUpload(false)}
+        title="Upload a video"
+        className="text-center"
+        buttonText="Upload"
+        handleClick={createVideo}
+      >
+        {status === 'loading' || !createAsset ? (
+          <>
+            <Loader2 />
+          </>
+        ) : (
+          <>
+            <Input
+              type="file"
+              multiple={false}
+              accept="video/*"
+              onChange={(e) => {
+                if (e.target.files) {
+                  setVideo(e.target.files[0]);
+                }
+              }}
+              // onChange={(e) => setValues({ ...values, link: e.target.value })}
+              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+            />
+            <Input
+              placeholder="Meeting link"
+              // onChange={(e) => setValues({ ...values, link: e.target.value })}
+              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+            />
+
+            <Textarea
+              placeholder="Description"
+              // onChange={(e) => setValues({ ...values, link: e.target.value })}
+              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+            />
+          </>
+        )}
+      </MeetingModal>
       <div className="flex-between w-14 ">
-        {/* <IconBell className="text-white h-64 w-64" /> */}
         <SignedIn>
           <UserButton afterSignOutUrl="/sign-in" />
         </SignedIn>
