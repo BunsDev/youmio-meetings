@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import MeetingTypeList from '@/components/MeetingTypeList';
 import Image from 'next/image';
 import React from 'react';
@@ -16,7 +17,10 @@ const Home = () => {
   const date = new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(
     now,
   );
-
+  const [likes, setlikes] = useState(3);
+  const Likes = (num) => {
+    setlikes(num + 1);
+  };
   return (
     <section className="flex size-full flex-col gap-4 text-white">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
@@ -80,36 +84,22 @@ const Home = () => {
             </button>
           </div>
         </WobbleCard>
-
-        {/* <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-          <div className="max-w-sm">
-            <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-              Signup for blazing-fast cutting-edge state of the art Gippity AI
-              wrapper today!
-            </h2>
-            <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-              With over 100,000 mothly active bot users, Gippity AI is the most
-              popular AI platform for developers.
-            </p>
-          </div>
-          <Image
-            src="/linear.webp"
-            width={500}
-            height={500}
-            alt="linear demo image"
-            className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-          />
-        </WobbleCard> */}
       </div>
-      <section className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 max-w-7xl mx-auto w-full">
-        <div className="bg-[#000000] p-2 rounded-xl ">
-          <iframe
-            src="https://lvpr.tv?v=506417joszjctksv"
-            className="rounded-xl"
-            allow="autoplay; encrypted-media; picture-in-picture"
-            sandbox="allow-same-origin allow-scripts"
-          ></iframe>
-          <div className="flex flex-row justify-between items-center">
+      <section className="grid grid-cols-1 gap-4  md:grid-cols-2 xl:grid-cols-3 max-w-7xl mx-auto w-full">
+        <div className="bg-[#000000] rounded-xl overflow-hidden">
+          <div className="pt-[56.25%] relative w-full">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://lvpr.tv?v=3717tj2pfxgjybw3"
+              allow="autoplay; encrypted-media;"
+              sandbox="allow-same-origin allow-scripts"
+              style={{
+                borderTopLeftRadius: '1rem',
+                borderTopRightRadius: '1rem',
+              }} // Make sure to match the border-radius with the container
+            ></iframe>
+          </div>
+          <div className="flex flex-row justify-between items-center p-3">
             <div className="flex flex-row items-center  space-x-3 py-2">
               <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m1.webp')] bg-cover bg-center"></span>
               <div>
@@ -117,26 +107,93 @@ const Home = () => {
                 <p className="text-xs">Mends Albert</p>
               </div>
             </div>
-            <div className="flex flex-row items-center space-x-1">
+            <div
+              className="flex cursor-pointer flex-row items-center space-x-1"
+              onClick={() => {
+                Likes(3);
+              }}
+            >
               <IconThumbUp height={16} width={16} />
-              <span className="text-sm">3</span>
+              <span className="text-sm">{likes}</span>
             </div>
             <div className="flex flex-row items-center space-x-1">
               <IconEye height={16} width={16} />
-              <span className="text-sm">3.2k</span>
+              <span className="text-sm">76</span>
             </div>
           </div>
         </div>
-        <iframe
-          src="https://lvpr.tv?v=506417joszjctksv"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          sandbox="allow-same-origin allow-scripts"
-        ></iframe>
-        <iframe
-          src="https://lvpr.tv?v=506417joszjctksv"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          sandbox="allow-same-origin allow-scripts"
-        ></iframe>
+        <div className="bg-[#000000] rounded-xl overflow-hidden">
+          <div className="pt-[56.25%] relative w-full">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://lvpr.tv?v=c8aeys8h270frp93"
+              allow="autoplay; encrypted-media;"
+              sandbox="allow-same-origin allow-scripts"
+              style={{
+                borderTopLeftRadius: '1rem',
+                borderTopRightRadius: '1rem',
+              }} // Make sure to match the border-radius with the container
+            ></iframe>
+          </div>
+          <div className="flex flex-row justify-between items-center p-3">
+            <div className="flex flex-row items-center  space-x-3 py-2">
+              <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m2.avif')] bg-cover bg-center"></span>
+              <div>
+                <p className="text-sm">A cartoons</p>
+                <p className="text-xs">Mends Albert</p>
+              </div>
+            </div>
+            <div
+              className="flex cursor-pointer flex-row items-center space-x-1"
+              onClick={() => {
+                Likes(3);
+              }}
+            >
+              <IconThumbUp height={16} width={16} />
+              <span className="text-sm">{likes}</span>
+            </div>
+            <div className="flex flex-row items-center space-x-1">
+              <IconEye height={16} width={16} />
+              <span className="text-sm">76</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#000000] rounded-xl overflow-hidden">
+          <div className="pt-[56.25%] relative w-full">
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://lvpr.tv?v=d57aajic9th61d0m"
+              allow="autoplay; encrypted-media;"
+              sandbox="allow-same-origin allow-scripts"
+              style={{
+                borderTopLeftRadius: '1rem',
+                borderTopRightRadius: '1rem',
+              }} // Make sure to match the border-radius with the container
+            ></iframe>
+          </div>
+          <div className="flex flex-row justify-between items-center p-3">
+            <div className="flex flex-row items-center  space-x-3 py-2">
+              <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m3.webp')] bg-cover bg-center"></span>
+              <div>
+                <p className="text-sm">A cartoons</p>
+                <p className="text-xs">Mends Albert</p>
+              </div>
+            </div>
+            <div
+              className="flex cursor-pointer flex-row items-center space-x-1"
+              onClick={() => {
+                Likes(3);
+              }}
+            >
+              <IconThumbUp height={16} width={16} />
+              <span className="text-sm">{likes}</span>
+            </div>
+            <div className="flex flex-row items-center space-x-1">
+              <IconEye height={16} width={16} />
+              <span className="text-sm">76</span>
+            </div>
+          </div>
+        </div>
       </section>
       <CategoryTypeList />
     </section>
