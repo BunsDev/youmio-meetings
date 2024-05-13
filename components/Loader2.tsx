@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Loader2 = () => {
   return (
-    <div className="flex-center h-3/6 w-full">
+    <div className="flex-center h-[56px] w-full">
       <Image
         src="/icons/loading-circle.svg"
         alt="Loading..."

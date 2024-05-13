@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <div className="text-white">
-      <input
+      {/* <input
         type="file"
         multiple={false}
         accept="video/*"
@@ -70,7 +70,8 @@ export default function Home() {
         </div>
       ))}
 
-      {error && <div>{error.message}</div>}
+      {error && <div>{error.message}</div>} */}
+      <h2 className="text-3xl pb-3 font-semibold">All Videos</h2>
       <section className="grid grid-cols-1 gap-4  md:grid-cols-2 xl:grid-cols-3 max-w-7xl mx-auto w-full">
         <div className="bg-[#000000] rounded-xl overflow-hidden">
           <div className="pt-[56.25%] relative w-full">

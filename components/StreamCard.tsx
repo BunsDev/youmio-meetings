@@ -34,13 +34,14 @@ const StreamCard = ({
       <div className="flex flex-col gap-2">
         <h1 className="text-md font-semibold">{title}</h1>
         <div className="text-sm flex flex-row items-center space-x-2">
+          <p className="text-sm font-normal">{description}</p>
+
           <span className="border rounded-full px-2"> Details</span>
-          <span className="border border-green-300 rounded-full px-2">
+          {/* <span className="border border-green-300 rounded-full px-2">
             {' '}
             Playback
-          </span>
+          </span> */}
         </div>
-        {/* <p className="text-sm font-normal">{description}</p> */}
       </div>
     </section>
   );

@@ -94,7 +94,7 @@ const PreviousPage = () => {
           <StreamCard
             key={stream.id}
             img="/icons/schedule.svg"
-            title={`Stream ID: ${stream.id}`}
+            title={`Stream Key: ${stream.streamKey}`}
             description={`Playback ID: ${stream.playbackId}`}
             className="bg-gray-900 bg-cover border-b-4"
           />

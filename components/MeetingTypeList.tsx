@@ -45,6 +45,7 @@ const MeetingTypeList = () => {
       const startsAt =
         values.dateTime.toISOString() || new Date(Date.now()).toISOString();
       const description = values.description || 'Instant Meeting';
+      let ss = await createMeetingS(description);
       await call.getOrCreate({
         data: {
           starts_at: startsAt,
@@ -53,7 +54,6 @@ const MeetingTypeList = () => {
           },
         },
       });
-      let ss = await createMeetingS(description);
       setCallDetail(call);
       if (!values.description) {
         router.push(`/meeting/${call.id}`);
@@ -101,6 +101,13 @@ const MeetingTypeList = () => {
         handleClick={() => router.push('/recordings')}
       />
 
+      <HomeCard
+        img="/icons/recordings.svg"
+        title="Previous Meetings"
+        description="Previous meetings"
+        className="bg-red-500"
+        handleClick={() => router.push('/previous')}
+      />
       {!callDetail ? (
         <MeetingModal
           isOpen={meetingState === 'isScheduleMeeting'}

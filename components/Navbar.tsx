@@ -52,6 +52,13 @@ const Navbar = () => {
   );
   const createVideo = async () => {
     createAsset?.();
+    if (status == 'success') {
+      alert('Your video is pending Approval. ');
+    } else if (status == 'error') {
+      alert(
+        'Sorry! We had an issue processing the video, Try again another time',
+      );
+    }
   };
   const renderMagnifyingGlassIcon = () => {
     return (
@@ -79,6 +86,7 @@ const Navbar = () => {
       </svg>
     );
   };
+
   const renderSearchForm = () => {
     return (
       <form
@@ -145,7 +153,7 @@ const Navbar = () => {
         buttonText="Upload"
         handleClick={createVideo}
       >
-        {status === 'loading' || !createAsset ? (
+        {status === 'loading' ? (
           <>
             <Loader2 />
           </>

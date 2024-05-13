@@ -37,7 +37,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: '/icons/music.svg',
-    route: '/recordings',
+    route: '/podcast',
     label: 'Podcast & Music',
   },
   {
