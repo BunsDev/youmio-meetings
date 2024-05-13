@@ -46,7 +46,7 @@ const Home = () => {
             className="absolute -right-4 lg:-right-[5%] grayscale filter -bottom-20 object-contain rounded-2xl"
           />
         </WobbleCard>
-        <WobbleCard containerClassName="col-span-1 max-h-[335px] bg-purple-900">
+        <WobbleCard containerClassName="col-span-1  bg-purple-900">
           <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Top Creators
           </h2>
