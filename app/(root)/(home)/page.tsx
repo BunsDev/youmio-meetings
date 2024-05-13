@@ -100,7 +100,7 @@ const Home = () => {
             <div className="flex flex-row items-center  space-x-3 py-2">
               <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m1.webp')] bg-cover bg-center"></span>
               <div>
-                <p className="text-sm">A cartoons</p>
+                <p className="text-sm">School</p>
                 <p className="text-xs">Daneil</p>
               </div>
             </div>
@@ -128,7 +128,7 @@ const Home = () => {
             <div className="flex flex-row items-center  space-x-3 py-2">
               <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m2.avif')] bg-cover bg-center"></span>
               <div>
-                <p className="text-sm">A cartoons</p>
+                <p className="text-sm">Cutie Cat playing</p>
                 <p className="text-xs">Elvis</p>
               </div>
             </div>
@@ -156,7 +156,7 @@ const Home = () => {
             <div className="flex flex-row items-center  space-x-3 py-2">
               <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m3.webp')] bg-cover bg-center"></span>
               <div>
-                <p className="text-sm">A cartoons</p>
+                <p className="text-sm">Bird Tweeting</p>
                 <p className="text-xs">Judith</p>
               </div>
             </div>
