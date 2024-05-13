@@ -29,7 +29,7 @@ const Home = () => {
           className=""
         >
           <div className="max-w-xs">
-            <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            <h2 className="text-left text-balance text-base md:text-xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
               Watch Livestreams everywhere
               <IconBroadcast className="h-20 w-20" />
             </h2>
@@ -43,45 +43,42 @@ const Home = () => {
             width={350}
             height={350}
             alt="linear demo image"
-            className="absolute -right-4 lg:-right-[5%] grayscale filter -bottom-10 object-contain rounded-2xl"
+            className="absolute -right-4 lg:-right-[5%] grayscale filter -bottom-20 object-contain rounded-2xl"
           />
         </WobbleCard>
-        <WobbleCard containerClassName="col-span-1 max-h-[390px] bg-purple-900">
+        <WobbleCard containerClassName="col-span-1 max-h-[335px] bg-purple-900">
           <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Top Creators
           </h2>
           <div className="py-2">
-            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
-              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+            <div className="flex  flex-row items-center  space-x-3 py-2">
+              <span className="w-11 h-11 rounded-full bg-[url('/images/m4.avif')] bg-cover bg-center"></span>
               <div>
-                <p className="text-sm">Mends Albert</p>
-                <p className="text-xs">323 Followers</p>
+                <p className="text-md">Noah</p>
+                <p className="text-xs">62 Followers</p>
               </div>
             </div>
-            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
-              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+            <div className="flex  flex-row items-center  space-x-3 py-2">
+              <span className="w-11 h-11 rounded-full bg-[url('/images/avatar-1.jpeg')] bg-cover bg-center"></span>
               <div>
-                <p className="text-sm">Mends Albert</p>
-                <p className="text-xs">323 Followers</p>
+                <p className="text-md">Mateo</p>
+                <p className="text-xs">43 Followers</p>
               </div>
             </div>
-            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
-              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+            <div className="flex  flex-row items-center  space-x-3 py-2">
+              <span className="w-11 h-11 rounded-full bg-[url('/images/avatar-2.jpeg')] bg-cover bg-center"></span>
               <div>
-                <p className="text-sm">Mends Albert</p>
-                <p className="text-xs">323 Followers</p>
+                <p className="text-md">Henry</p>
+                <p className="text-xs">98 Followers</p>
               </div>
             </div>
-            <div className="flex ring-1 flex-row items-center  space-x-3 py-2">
-              <span className="w-9 h-9 bg-red-500 rounded-full"></span>
+            <div className="flex flex-row items-center  space-x-3 py-2">
+              <span className="w-11 h-11 rounded-full bg-[url('/images/avatar-4.png')] bg-cover bg-center"></span>
               <div>
-                <p className="text-sm">Mends Albert</p>
-                <p className="text-xs">323 Followers</p>
+                <p className="text-md">William</p>
+                <p className="text-xs">184 Followers</p>
               </div>
             </div>
-            <button className="px-8 py-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-              View All
-            </button>
           </div>
         </WobbleCard>
       </div>
@@ -104,7 +101,7 @@ const Home = () => {
               <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m1.webp')] bg-cover bg-center"></span>
               <div>
                 <p className="text-sm">A cartoons</p>
-                <p className="text-xs">Mends Albert</p>
+                <p className="text-xs">Daneil</p>
               </div>
             </div>
 
@@ -132,13 +129,13 @@ const Home = () => {
               <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m2.avif')] bg-cover bg-center"></span>
               <div>
                 <p className="text-sm">A cartoons</p>
-                <p className="text-xs">Mends Albert</p>
+                <p className="text-xs">Elvis</p>
               </div>
             </div>
 
             <div className="flex flex-row items-center space-x-1">
               <IconEye height={16} width={16} />
-              <span className="text-sm">76</span>
+              <span className="text-sm">52</span>
             </div>
           </div>
         </div>
@@ -160,13 +157,13 @@ const Home = () => {
               <span className="w-9 h-9 bg-red-500 rounded-full bg-[url('/images/m3.webp')] bg-cover bg-center"></span>
               <div>
                 <p className="text-sm">A cartoons</p>
-                <p className="text-xs">Mends Albert</p>
+                <p className="text-xs">Judith</p>
               </div>
             </div>
 
             <div className="flex flex-row items-center space-x-1">
               <IconEye height={16} width={16} />
-              <span className="text-sm">76</span>
+              <span className="text-sm">21</span>
             </div>
           </div>
         </div>
