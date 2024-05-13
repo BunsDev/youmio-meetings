@@ -73,21 +73,18 @@ export default function Home() {
       <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
         <iframe
           src="https://lvpr.tv?v=506417joszjctksv"
-          frameborder="0"
           allowfullscreen
           allow="autoplay; encrypted-media; picture-in-picture"
           sandbox="allow-same-origin allow-scripts"
         ></iframe>
         <iframe
           src="https://lvpr.tv?v=506417joszjctksv"
-          frameborder="0"
           allowfullscreen
           allow="autoplay; encrypted-media; picture-in-picture"
           sandbox="allow-same-origin allow-scripts"
         ></iframe>
         <iframe
           src="https://lvpr.tv?v=506417joszjctksv"
-          frameborder="0"
           allowfullscreen
           allow="autoplay; encrypted-media; picture-in-picture"
           sandbox="allow-same-origin allow-scripts"
