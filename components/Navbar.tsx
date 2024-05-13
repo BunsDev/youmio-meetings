@@ -17,10 +17,13 @@ import { useState } from 'react';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import Loader2 from './Loader';
+import { useBalance, useAccount } from 'wagmi';
 
 const Navbar = () => {
   const [isUpload, setIsUpload] = useState(false);
   const [video, setVideo] = useState<File | undefined>(undefined);
+  const account = useAccount();
+  const balance = useBalance({ address: account.address });
 
   // Ref for the file input
   const {
@@ -60,6 +63,7 @@ const Navbar = () => {
       );
     }
   };
+
   const renderMagnifyingGlassIcon = () => {
     return (
       <svg
@@ -102,10 +106,10 @@ const Navbar = () => {
             className="border-none bg-transparent focus:outline-none focus:ring-0 w-full text-sm "
           />
         </div>
-        <div className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full">
+        <div className=" hidden p-2 lg:flex cursor-pointer items-center justify-center bg-black rounded-full">
           <IconMicrophone height={20} width={20} />
         </div>
-        <div className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full">
+        <div className="hidden lg:flex p-2  cursor-pointer items-center justify-center bg-black rounded-full">
           <Link href={'/stream'}>
             <IconBroadcast height={20} width={20} />
           </Link>
@@ -114,14 +118,14 @@ const Navbar = () => {
           onClick={() => {
             setIsUpload(true);
           }}
-          className=" p-2 flex cursor-pointer items-center justify-center bg-black rounded-full"
+          className=" p-2 hidden lg:flex cursor-pointer items-center justify-center bg-black rounded-full"
         >
           {/* <Link href={'/video'}> */}
           <IconUpload height={20} width={20} />
           {/* </Link> */}
         </div>
-        <div className="px-4 py-0.5 text-white text-md font-medium border flex cursor-pointer items-center justify-center  rounded-lg">
-          88.99 YMI
+        <div className="px-4 hidden md:flex py-0.5 text-white text-md font-medium border  cursor-pointer items-center justify-center  rounded-lg">
+          {balance?.data?.formatted} YMI
         </div>
         <input type="submit" hidden value="" />
       </form>
