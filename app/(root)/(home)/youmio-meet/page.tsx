@@ -16,7 +16,7 @@ const YoumioMeet = () => {
   return (
     <section className="flex size-full flex-col gap-4 text-white">
       <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover">
-        <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
+        <div className="flex h-full flex-col px-5 py-8 justify-between max-md:px-5 max-md:py-8 lg:p-11">
           <h2 className="glassmorphism max-w-[273px] rounded-xl py-2 text-center text-base font-normal">
             Upcoming Meeting at: 12:30 PM
           </h2>

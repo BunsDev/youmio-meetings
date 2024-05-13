@@ -7,7 +7,6 @@ contract Youmio {
     mapping(uint256 => NFT) public nfts;
     uint256 public nextNftId = 1;
     uint256 public constant SIGNUP_REWARD = 10;
-    uint256 public constant MEETING_SIGNATURE_FEE = 1; // 1 YMI fee for signing a meeting
 
     // NFT structure
     struct NFT {
@@ -36,14 +35,10 @@ contract Youmio {
     }
 
     function createMeeting(string calldata meetingDetails) external {
-        require(balances[msg.sender] >= MEETING_SIGNATURE_FEE, "Insufficient YMI tokens.");
-        balances[msg.sender] -= MEETING_SIGNATURE_FEE;
         emit MeetingCreated(msg.sender, meetingDetails);
     }
 
     function scheduleMeeting(string calldata scheduleDetails) external {
-        require(balances[msg.sender] >= MEETING_SIGNATURE_FEE, "Insufficient YMI tokens.");
-        balances[msg.sender] -= MEETING_SIGNATURE_FEE;
         emit MeetingScheduled(msg.sender, scheduleDetails);
     }
 

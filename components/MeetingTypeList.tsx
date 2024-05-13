@@ -15,6 +15,8 @@ import { useToast } from './ui/use-toast';
 import { Input } from './ui/input';
 import { contract } from '@/utils';
 import { signUp, createMeetingS } from '../utils/queries';
+import { useSignMessage } from 'wagmi';
+
 const initialValues = {
   dateTime: new Date(),
   description: '',
@@ -31,6 +33,13 @@ const MeetingTypeList = () => {
   const client = useStreamVideoClient();
   const { user } = useUser();
   const { toast } = useToast();
+  const {
+    data: signMessageData,
+    error,
+    isLoading,
+    signMessage,
+    variables,
+  } = useSignMessage() as any;
 
   const createMeeting = async () => {
     if (!client || !user) return;
@@ -46,6 +55,7 @@ const MeetingTypeList = () => {
         values.dateTime.toISOString() || new Date(Date.now()).toISOString();
       const description = values.description || 'Instant Meeting';
       let ss = await createMeetingS(description);
+      // signMessage({ description: description });
       await call.getOrCreate({
         data: {
           starts_at: startsAt,

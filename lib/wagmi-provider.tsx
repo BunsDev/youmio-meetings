@@ -14,14 +14,6 @@ const LiskSepolia = {
   rpcUrl: 'https://rpc.sepolia-api.lisk.com',
 } as any;
 
-const BitTorrent = {
-  chainId: 1029,
-  name: 'BitTorrent Chain Donau',
-  currency: 'BTTC',
-  explorerUrl: 'https://testscan.bt.io',
-  rpcUrl: 'https://pre-rpc.bt.io/',
-} as any;
-
 const zkEVMCardonaTestnet = {
   chainId: 2442,
   name: 'Polygon zkEVM Cardona Testnet',
@@ -33,7 +25,7 @@ const zkEVMCardonaTestnet = {
 createWeb3Modal({
   wagmiConfig: config,
   projectId,
-  defaultChain: BitTorrent,
+  defaultChain: LiskSepolia,
   enableAnalytics: true, // Optional
   //   themeMode: 'light',
 });

@@ -15,31 +15,30 @@ const metadata = {
   icons: ['https://avatars.githubusercontent.com/u/37784886'],
 };
 
-const BitTorrent = {
-  id: 1029,
-  name: 'BitTorrent Chain Donau',
-  network: 'BitTorrent Chain Donau',
+const LiskSepolia = {
+  id: 4202,
+  name: 'Lisk Sepolia Testnet',
+  network: 'Lisk Sepolia Testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'BitTorrent Chain Donau',
-    symbol: 'BTTC',
+    name: 'Lisk Sepolia Testnet',
+    symbol: 'ETH',
   },
   rpcUrls: {
     default: {
-      http: ['https://pre-rpc.bt.io/'],
+      http: ['https://rpc.sepolia-api.lisk.com'],
     },
   },
   blockExplorers: {
     default: {
       name: 'Apothem Explorer',
-      url: 'https://testscan.bt.io',
+      url: 'https://sepolia-blockscout.lisk.com',
     },
   },
   testnet: true,
 } as any;
-
 export const config = defaultWagmiConfig({
-  chains: [BitTorrent],
+  chains: [LiskSepolia],
   projectId,
   metadata,
   ssr: true,
@@ -48,3 +47,5 @@ export const config = defaultWagmiConfig({
   }),
   enableEmail: true,
 });
+
+// npx hardhat ignition deploy ./ignition/modules/Lock.js --network sepolia
