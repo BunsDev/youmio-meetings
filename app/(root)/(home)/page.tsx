@@ -107,15 +107,7 @@ const Home = () => {
                 <p className="text-xs">Mends Albert</p>
               </div>
             </div>
-            {/* <div
-              className="flex cursor-pointer flex-row items-center space-x-1"
-              onClick={() => {
-                Likes(3);
-              }}
-            >
-              <IconThumbUp height={16} width={16} />
-              <span className="text-sm">{likes}</span>
-            </div> */}
+
             <div className="flex flex-row items-center space-x-1">
               <IconEye height={16} width={16} />
               <span className="text-sm">76</span>
@@ -143,15 +135,7 @@ const Home = () => {
                 <p className="text-xs">Mends Albert</p>
               </div>
             </div>
-            <div
-              className="flex cursor-pointer flex-row items-center space-x-1"
-              onClick={() => {
-                Likes(3);
-              }}
-            >
-              <IconThumbUp height={16} width={16} />
-              <span className="text-sm">{likes}</span>
-            </div>
+
             <div className="flex flex-row items-center space-x-1">
               <IconEye height={16} width={16} />
               <span className="text-sm">76</span>
@@ -179,15 +163,7 @@ const Home = () => {
                 <p className="text-xs">Mends Albert</p>
               </div>
             </div>
-            <div
-              className="flex cursor-pointer flex-row items-center space-x-1"
-              onClick={() => {
-                Likes(3);
-              }}
-            >
-              <IconThumbUp height={16} width={16} />
-              <span className="text-sm">{likes}</span>
-            </div>
+
             <div className="flex flex-row items-center space-x-1">
               <IconEye height={16} width={16} />
               <span className="text-sm">76</span>
