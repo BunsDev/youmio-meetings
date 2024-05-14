@@ -10,6 +10,11 @@
     <a href="https://github.com/sensurusirupus/youmio" title="GitHub Repository">📂 Repo</a>
     ·
     <a href="https://github.com/sensurusirupus/youmio/issues" title="🐛 Report Bug / 🎊 Request Feature">🚀 Got Issue</a>
+    ·
+    <a href="https://docs.google.com/document/d/1zdZxR7siujQR44Uy0TmLsu9wlRbazPjuaxWq82KxRWk/edit?usp=sharing" title="🐛 Report Bug / 🎊 Request Feature">📑 White Paper</a>
+    ·
+    <a href="https://youmio.netlify.app" title="🐛 Report Bug / 🎊 Request Feature">🔗 Link</a>
+    
 </p>
 
 ### What Inspired Us 💡
