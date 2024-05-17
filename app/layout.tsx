@@ -40,7 +40,6 @@ export default function RootLayout({
               layout: {
                 socialButtonsVariant: 'iconButton',
               },
-              // baseTheme: dark,
 
               variables: {
                 colorText: '#fff',
