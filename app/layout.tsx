@@ -18,14 +18,6 @@ import { cookieToInitialState } from 'wagmi';
 
 const inter = Inter({ subsets: ['latin'] });
 
-// export const metadata: Metadata = {
-//   title: 'YOOM',
-//   description: 'Video calling App',
-//   icons: {
-//     icon: '/icons/logo.svg',
-//   },
-// };
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
