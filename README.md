@@ -73,7 +73,7 @@ npm install
 4. **Configure environment variables:**
 
 ```bash
-# Create a .env file and update with your variables
+# Create a .env file and update with your
 echo "PRIVATE_KEY=your_private_key_here" > .env
 ```
 
