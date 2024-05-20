@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-/* ======== stream css overrides ======== */
+/* ======== stream css overrides ====== */
 .str-video__call-stats {
   max-width: 500px;
   position: relative;
