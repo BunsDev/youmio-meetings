@@ -47,7 +47,7 @@ export async function scheduleMeeting(scheduleDetails) {
   }
 }
 
-// Function to mint a new NFT
+// Function to mint a new NFT_
 export async function mintNft(imageUrl, description, price) {
   try {
     const priceInWei = ethers.utils.parseEther(price.toString());
