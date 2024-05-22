@@ -14,7 +14,6 @@ import { Toaster } from '@/components/ui/toaster';
 import WagmiProviderComp from '../lib/wagmi-provider';
 import { config } from '../lib/config';
 import { cookieToInitialState } from 'wagmi';
-// import { headers } from 'next/headers';
 
 const inter = Inter({ subsets: ['latin'] });
 
