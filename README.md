@@ -135,5 +135,5 @@ peer and IPFS addresses significant issues in traditional video conferencing.
 - **Feature Expansion**: Planning to introduce AI moderation, more interactive tools, and accessibility features.
 - **Wider Device Support**: Aiming to support a broader range of devices and platforms.
 
-**Contract Address:** 0x58F67AA868A253514262357
-**Deployed Link:** [0x58F67AA868A253514262357](https://sepolia-blockscout.lisk.com/address/0x58F67AA868A253514262357118aBC74E79363e57)
+<!-- **Contract Address:** 0x58F67AA868A253514262357
+**Deployed Link:** [0x58F67AA868A253514262357](https://sepolia-blockscout.lisk.com/address/0x58F67AA868A253514262357118aBC74E79363e57) -->

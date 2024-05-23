@@ -8,7 +8,6 @@ contract Youmio {
     uint256 public nextNftId = 1;
     uint256 public constant SIGNUP_REWARD = 10;
 
-    // NFT structure
     struct NFT {
         uint256 id;
         string imageUrl;
