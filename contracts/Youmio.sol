@@ -2,7 +2,6 @@
 pragma solidity ^0.8.0;
 
 contract Youmio {
-    // State variables
     mapping(address => uint256) public balances;
     mapping(uint256 => NFT) public nfts;
     uint256 public nextNftId = 1;
