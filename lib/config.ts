@@ -15,31 +15,31 @@ const metadata = {
   icons: ['https://avatars.githubusercontent.com/u/37784886'],
 };
 
-const AVAX = {
-  id: 43113,
-  name: 'Avalanche Fuji C-Chain',
-  network: 'Avalanche Fuji C-Chain',
+const FVM = {
+  id: 314159,
+  name: 'Filecoin - Calibration testnet',
+  network: 'Filecoin - Calibration testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'Avalanche Fuji C-Chain',
-    symbol: 'AVAX',
+    name: 'Filecoin - Calibration testnet',
+    symbol: 'tFIL',
   },
   rpcUrls: {
     default: {
-      http: ['https://api.avax-test.network/ext/bc/C/rpc'],
+      http: ['https://filecoin-calibration.chainup.net/rpc/v1'],
     },
   },
   blockExplorers: {
     default: {
-      name: 'AVAX',
-      url: 'https://subnets-test.avax.network/c-chain',
+      name: 'tFIL',
+      url: 'https://calibration.filscan.io',
     },
   },
   testnet: true,
 } as any;
 
 export const config = defaultWagmiConfig({
-  chains: [AVAX],
+  chains: [FVM],
   projectId,
   metadata,
   ssr: true,

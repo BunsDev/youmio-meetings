@@ -6,18 +6,18 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { State, WagmiProvider } from 'wagmi';
 import { config, projectId } from './config';
 
-const AVAX = {
-  chainId: 43113,
-  name: ' Avalanche Fuji C-Chain',
-  currency: 'AVAX',
-  explorerUrl: 'https://subnets-test.avax.network/c-chain',
-  rpcUrl: ' https://api.avax-test.network/ext/bc/C/rpc',
+const FVM = {
+  chainId: 314159,
+  name: 'Filecoin - Calibration testnet',
+  currency: 'tFIL',
+  explorerUrl: 'https://calibration.filscan.io',
+  rpcUrl: 'https://filecoin-calibration.chainup.net/rpc/v1',
 } as any;
 
 createWeb3Modal({
   wagmiConfig: config,
   projectId,
-  defaultChain: AVAX,
+  defaultChain: FVM,
   enableAnalytics: true,
 });
 
