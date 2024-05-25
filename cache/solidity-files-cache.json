@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/albertmends/Documents/youmio/contracts/Youmio.sol": {
-      "lastModificationDate": 1716547406963,
-      "contentHash": "a37a9c5ab8e7740dc9336a3e654c9eba",
+      "lastModificationDate": 1716670430536,
+      "contentHash": "d519ac64b33d74fec33774cb5a06a032",
       "sourceName": "contracts/Youmio.sol",
       "solcConfig": {
         "version": "0.8.24",
