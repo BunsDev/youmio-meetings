@@ -38,9 +38,10 @@ Youmio integrates a suite of advanced technologies, providing a robust framework
 - **Ethereum Blockchain**: Core infrastructure for smart contracts and user authentication.
 - **Livepeer**: Utilized for decentralized, efficient video streaming.
 - **IPFS**: Handles decentralized and secure data storage.
+- **Chainlink VRF**: Provides verifiable randomness for meetings, sign-ups, and batch transactions.
 - **React and Next.js**: Powers the dynamic and responsive front end.
 - **Tailwind CSS**: Facilitates rapid UI development with its utility-first framework.
-- **Lisk Sepolia Testnet**: For deploying and testing smart contracts.
+- **Mends's Devnet Subnet**: Our custom subnet deployed on Avalanche's AvaCloud for optimal performance and scalability.
 
 ### Prerequisites
 
@@ -100,8 +101,8 @@ module.exports = {
     hardhat: {
       chainId: 1029,
     },
-    "lisk-sepolia": {
-      url: 'https://rpc.lisk.com',
+    "mends-devnet": {
+      url: 'https://subnets.avacloud.io/c7cfaccc-4b39-430b-ac23-23709ae14359',
       accounts: [privateKey],
     },
   },
@@ -125,15 +126,12 @@ module.exports = {
 ### Accomplishments We're Proud Of 💪
 
 - **Fully Decentralized System**: Built a completely decentralized video conferencing platform.
-- **Pioneering Technology Use**: Our innovative application of Live
-- **Innovative Use of Technology**: Leveraging Livepeer and IPFS to solve traditional problems in video conferencing.
-
-peer and IPFS addresses significant issues in traditional video conferencing.
+- **Pioneering Technology Use**: Our innovative application of Livepeer, IPFS, and Chainlink VRF addresses significant issues in traditional video conferencing.
 
 ### What's Next for Youmio 🔮
 
 - **Feature Expansion**: Planning to introduce AI moderation, more interactive tools, and accessibility features.
 - **Wider Device Support**: Aiming to support a broader range of devices and platforms.
 
-<!-- **Contract Address:** 0x58F67AA868A253514262357
-**Deployed Link:** [0x58F67AA868A253514262357](https://sepolia-blockscout.lisk.com/address/0x58F67AA868A253514262357118aBC74E79363e57) -->
+Contract Address: 0x0C4361c038696dB4e2A28367689e60eE6F8F94FB
+**Deployed Link:** [0x0C4361c038696dB4e2A28367689e60eE6F8F94FB](https://testnet.snowtrace.io/address/0x0C4361c038696dB4e2A28367689e60eE6F8F94FB)
