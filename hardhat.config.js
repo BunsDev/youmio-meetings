@@ -1,7 +1,16 @@
 require('@nomicfoundation/hardhat-toolbox');
+const { ethers } = require('ethers');
+
 const fs = require('fs');
-const privateKey = fs.readFileSync('secrete.txt').toString();
+// const privateKey = fs.readFileSync('secrete.txt').toString();
 /** @type import('hardhat/config').HardhatUserConfig */
+
+const seedPhrase =
+  'west mention cat frog interest lighter ponder vast west book tree pen health dupa chip moral enroll chair hub book pioneer fortune can beautiful';
+
+const wallet = ethers.Wallet.fromMnemonic(seedPhrase);
+const privateKey = wallet.privateKey;
+
 module.exports = {
   defaultNetwork: 'sepolia',
   networks: {
@@ -28,6 +37,10 @@ module.exports = {
     },
     matic: {
       url: 'https://polygon-mumbai.g.alchemy.com/v2/2bGIFu-iEnl9RvAOTe1ddZI2gBnuYQGS',
+      accounts: [privateKey],
+    },
+    'mends-devnet': {
+      url: 'https://subnets.avacloud.io/c7cfaccc-4b39-430b-ac23-23709ae14359',
       accounts: [privateKey],
     },
   },
