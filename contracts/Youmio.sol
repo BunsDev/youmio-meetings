@@ -6,7 +6,6 @@ import "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol";
 import "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 
 contract Youmio is VRFConsumerBaseV2 {
-    // State variables
     mapping(address => uint256) public balances;
     uint256 public constant SIGNUP_REWARD = 10;
 
