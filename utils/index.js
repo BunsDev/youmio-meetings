@@ -7,7 +7,7 @@ export const contract = async () => {
   if (ethereum) {
     const signer = provider.getSigner();
     const contractReader = new ethers.Contract(
-      '0x58F67AA868A253514262357118aBC74E79363e57',
+      '0x0C4361c038696dB4e2A28367689e60eE6F8F94FB',
       Youmio.abi,
       signer,
     );

@@ -15,30 +15,31 @@ const metadata = {
   icons: ['https://avatars.githubusercontent.com/u/37784886'],
 };
 
-const LiskSepolia = {
-  id: 4202,
-  name: 'Lisk Sepolia Testnet',
-  network: 'Lisk Sepolia Testnet',
+const AVAX = {
+  id: 43113,
+  name: 'Avalanche Fuji C-Chain',
+  network: 'Avalanche Fuji C-Chain',
   nativeCurrency: {
     decimals: 18,
-    name: 'Lisk Sepolia Testnet',
-    symbol: 'ETH',
+    name: 'Avalanche Fuji C-Chain',
+    symbol: 'AVAX',
   },
   rpcUrls: {
     default: {
-      http: ['https://rpc.sepolia-api.lisk.com'],
+      http: ['https://api.avax-test.network/ext/bc/C/rpc'],
     },
   },
   blockExplorers: {
     default: {
-      name: 'Apothem Explorer',
-      url: 'https://sepolia-blockscout.lisk.com',
+      name: 'AVAX',
+      url: 'https://subnets-test.avax.network/c-chain',
     },
   },
   testnet: true,
 } as any;
+
 export const config = defaultWagmiConfig({
-  chains: [LiskSepolia],
+  chains: [AVAX],
   projectId,
   metadata,
   ssr: true,
@@ -47,5 +48,3 @@ export const config = defaultWagmiConfig({
   }),
   enableEmail: true,
 });
-
-// npx hardhat ignition deploy ./ignition/modules/Lock.js --network sepolia
