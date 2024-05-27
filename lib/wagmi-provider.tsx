@@ -33,7 +33,7 @@ export const WagmiProviderComp = ({
       new QueryClient({
         defaultOptions: {
           queries: {
-            refetchOnWindowFocus: false, // configure as per your needs
+            refetchOnWindowFocus: false,
           },
         },
       }),
