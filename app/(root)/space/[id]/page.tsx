@@ -37,7 +37,7 @@ const MeetingPage = () => {
     (!user || !call.state.members.find((m) => m.user.id === user.id));
 
   if (notAllowed)
-    return <Alert title="You are not allowed to join this meeting" />;
+    return <Alert title="You are not allowed to join this meeting." />;
 
   return (
     <main className="h-screen w-full">
