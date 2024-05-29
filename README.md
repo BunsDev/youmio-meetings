@@ -4,18 +4,6 @@
 
 <h1 align="center">Youmio</h1>
 <a href='https://postimg.cc/2bKTYMXS' target='_blank'><img src='https://i.postimg.cc/hvSYLqLT/Xnapper-2024-05-13-18-39-32.png' border='0' alt='Youmio Interface'/></a>
-<p align="center">
-    <a href="https://youtu.be/FwV3H47Wsuk" title="Tutorial Video">🖥️ Video</a>
-    ·
-    <a href="https://github.com/sensurusirupus/youmio" title="GitHub Repository">📂 Repo</a>
-    ·
-    <a href="https://github.com/sensurusirupus/youmio/issues" title="🐛 Report Bug / 🎊 Request Feature">🚀 Got Issue</a>
-    ·
-    <a href="https://docs.google.com/document/d/1zdZxR7siujQR44Uy0TmLsu9wlRbazPjuaxWq82KxRWk/edit?usp=sharing" title="🐛 Report Bug / 🎊 Request Feature">📑 White Paper</a>
-    ·
-    <a href="https://youmio.netlify.app" title="🐛 Report Bug / 🎊 Request Feature">🔗 Link</a>
-    
-</p>
 
 ### What Inspired Us 💡
 
