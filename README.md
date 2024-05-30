@@ -29,7 +29,6 @@ Youmio integrates a suite of advanced technologies, providing a robust framework
 - **Chainlink VRF**: Provides verifiable randomness for meetings, sign-ups, and batch transactions.
 - **React and Next.js**: Powers the dynamic and responsive front end.
 - **Tailwind CSS**: Facilitates rapid UI development with its utility-first framework.
-- **Mends's Devnet Subnet**: Our custom subnet deployed on Avalanche's AvaCloud for optimal performance and scalability.
 
 ### Prerequisites
 
@@ -89,8 +88,8 @@ module.exports = {
     hardhat: {
       chainId: 1029,
     },
-    "mends-devnet": {
-      url: 'https://subnets.avacloud.io/c7cfaccc-4b39-430b-ac23-23709ae14359',
+    "network name": {
+      url: '',
       accounts: [privateKey],
     },
   },
@@ -120,6 +119,3 @@ module.exports = {
 
 - **Feature Expansion**: Planning to introduce AI moderation, more interactive tools, and accessibility features.
 - **Wider Device Support**: Aiming to support a broader range of devices and platforms.
-
-Contract Address: 0x0C4361c038696dB4e2A28367689e60eE6F8F94FB
-**Deployed Link:** [0x0C4361c038696dB4e2A28367689e60eE6F8F94FB](https://testnet.snowtrace.io/address/0x0C4361c038696dB4e2A28367689e60eE6F8F94FB)
