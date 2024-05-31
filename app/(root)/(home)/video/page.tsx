@@ -42,35 +42,6 @@ export default function Home() {
 
   return (
     <div className="text-white">
-      {/* <input
-        type="file"
-        multiple={false}
-        accept="video/*"
-        onChange={(e) => {
-          if (e.target.files) {
-            setVideo(e.target.files[0]);
-          }
-        }}
-      />
-      <button
-        disabled={status === 'loading' || !createAsset}
-        onClick={() => {
-          createAsset?.();
-        }}
-      >
-        Create Asset
-      </button>
-      {assets?.map((asset) => (
-        <div key={asset.id}>
-          <div>
-            <div>Asset Name: {asset?.name}</div>
-            <div>Playback URL: {asset?.playbackUrl}</div>
-            <div>IPFS CID: {asset?.storage?.ipfs?.cid ?? 'None'}</div>
-          </div>
-        </div>
-      ))}
-
-      {error && <div>{error.message}</div>} */}
       <h2 className="text-3xl pb-3 font-semibold">All Videos</h2>
       <section className="grid grid-cols-1 gap-4  md:grid-cols-2 xl:grid-cols-3 max-w-7xl mx-auto w-full">
         <div className="bg-[#000000] rounded-xl overflow-hidden">
@@ -83,7 +54,7 @@ export default function Home() {
               style={{
                 borderTopLeftRadius: '1rem',
                 borderTopRightRadius: '1rem',
-              }} // Make sure to match the border-radius with the container
+              }}
             ></iframe>
           </div>
           <div className="flex flex-row justify-between items-center p-3">
