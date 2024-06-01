@@ -124,9 +124,7 @@ const Navbar = () => {
           <IconUpload height={20} width={20} />
           {/* </Link> */}
         </div>
-        <div className="px-4 hidden md:flex py-0.5 text-white text-md font-medium border  cursor-pointer items-center justify-center  rounded-lg">
-          {balance?.data?.formatted} YMI
-        </div>
+
         <input type="submit" hidden value="" />
       </form>
     );
